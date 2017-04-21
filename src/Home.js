@@ -10,11 +10,19 @@ export default class Home extends Component {
     };
   }
 
+  onAddPersons() {
+
+  }
+
+  onStartSession() {
+
+  }
+
   render() {
     return (
       <div>
-        <RaisedButton label="Add Persons" />
-        <RaisedButton label="Start Session" />
+        <RaisedButton onClick={this.onAddPersons} label="Add Persons" />
+        <RaisedButton onClick={this.onStartSession} label="Start Session" />
       </div>
     );
   }
