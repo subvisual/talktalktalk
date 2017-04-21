@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { initAudio, audioRecorder, gotBuffers } from "./main";
+import { initAudio, audioRecorder, gotBuffers } from "./audioRecorder";
 
 class RecordSession extends Component {
   constructor(props) {
