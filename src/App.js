@@ -83,10 +83,12 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-        {
-          (this.state.persons.length > 0) ? (<Home></Home>) : (<Login onLogin={this.onLogin.bind(this)}></Login>)
-        }
-        <RecordSession />
+        <div>
+          {
+            (this.state.persons.length > 0) ? (<Home></Home>) : (<Login onLogin={this.onLogin.bind(this)}></Login>)
+          }
+          <RecordSession></RecordSession>
+        </div>
       </MuiThemeProvider>
     );
   }
